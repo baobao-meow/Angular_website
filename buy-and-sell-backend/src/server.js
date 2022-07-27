@@ -1,7 +1,9 @@
 import Hapi from '@hapi/hapi';
 import routes from './routes';
 import { db } from './database';
+import * as admin from 'firebase-admin';
 
+admin.initializeApp();
 let server;
 
 const start = async () => {
