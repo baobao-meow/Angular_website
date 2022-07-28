@@ -6,11 +6,11 @@ let connection;
 export const db = {
     connect: () => {
         connection = mysql.createConnection({
-            host: 'localhost',
-            user: 'hapi-server',
-            password: 'abc123!',
-            database: 'buy-and-sell',
-            //socketPath: process.env.DB_SOCKET,
+            host: process.env.DB_HOST,
+            user: process.env.DB_USER,
+            password: process.env.DB_PASS,
+            database: process.env.DB_NAME,
+            socketPath: process.env.DB_SOCKET,
         });
         connection.connect();
     },
