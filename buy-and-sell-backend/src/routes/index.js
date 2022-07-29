@@ -5,7 +5,7 @@ import { getUserListingsRoute } from './getUserListings.js';
 import { createNewListingRoute } from './createNewListing';
 import { deleteListingRoute } from './deleteListing';
 import { updateListingRoute } from './updateListing';
-
+import { staticFilesRoute, filesRoutes } from './file';
 
 export default [
     addViewToListingRoute,
@@ -15,4 +15,6 @@ export default [
     createNewListingRoute,
     updateListingRoute,
     deleteListingRoute,
+    staticFilesRoute, 
+    ...filesRoutes,
 ];

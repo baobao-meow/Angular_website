@@ -5,6 +5,7 @@ import * as admin from 'firebase-admin';
 import routes from './routes';
 import { db } from './database';
 import credentials from '../credentials.json';
+import inert from '@hapi/inert';
 
 admin.initializeApp({
     credential: admin.credential.cert(credentials),
@@ -18,6 +19,8 @@ const start = async () => {
         host: '0.0.0.0',
     });
 
+    await server.register(inert);
+    
     routes.forEach(route => server.route(route));
 
     db.connect();
