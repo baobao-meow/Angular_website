@@ -17,7 +17,11 @@ var db = {
       user: process.env.DB_USER,
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
-      socketPath: process.env.DB_SOCKET
+      socketPath: process.env.DB_SOCKET // host: '35.226.120.235',
+      // user: 'hapi-server',
+      // password: 'abc123!',
+      // database: 'buy-and-sell',
+
     });
     connection.connect();
   },

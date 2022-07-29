@@ -12,11 +12,11 @@ var _dotenv = _interopRequireDefault(require("dotenv"));
 
 var _hapi = _interopRequireDefault(require("@hapi/hapi"));
 
+var admin = _interopRequireWildcard(require("firebase-admin"));
+
 var _routes = _interopRequireDefault(require("./routes"));
 
 var _database = require("./database");
-
-var admin = _interopRequireWildcard(require("firebase-admin"));
 
 var _credentials = _interopRequireDefault(require("../credentials.json"));
 
