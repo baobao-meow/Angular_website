@@ -46,8 +46,8 @@ Thumbs.db
 credentials.json
 app.yaml
 .env
-build
-dist
+/build
+/dist
 
 
 
