@@ -11,11 +11,6 @@ export const db = {
             password: process.env.DB_PASS,
             database: process.env.DB_NAME,
             socketPath: process.env.DB_SOCKET,
-
-            // host: '35.226.120.235',
-            // user: 'hapi-server',
-            // password: 'abc123!',
-            // database: 'buy-and-sell',
  
         });
         connection.connect();
